@@ -110,10 +110,10 @@ else:
   ID.to_file(identitypath)
   print("Saving new identity")
 
-# Creare and configure LXM router
+# Create and configure LXM router
 lxm_router = LXMF.LXMRouter(identity = ID, storagepath = configdir)
 
-# Refgister callback
+# Register callback
 lxm_router.register_delivery_callback(LXMDelivery)
 
 # The delivery identity takes the display name as a string
