@@ -42,8 +42,8 @@ def Respond(destination, message):
 	# Request it
     RNS.Transport.request_path(destination_bytes)
 	# And wait until it arrives; timeout in 30s
-    while destinantion_identity == None and (time.time() - basetime) < 30:
-      destinantion_identity = RNS.Identity.recall(destination_bytes)
+    while destination_identity == None and (time.time() - basetime) < 30:
+      destination_identity = RNS.Identity.recall(destination_bytes)
       time.sleep(1)
   if destination_identity == None:
     print("Error: Cannot recall identity")
