@@ -72,10 +72,7 @@ def Respond(destination, message):
 	  title="ACK", 
 	  desired_method=LXMF.LXMessage.DIRECT
 	  )
-	
-    # Use the propagation network if it can't deliver directly?	
-    lxm.try_propagation_on_fail = True
-	
+		
 	# Send the message through the router
     lxm_router.handle_outbound(lxm)
 
