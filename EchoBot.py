@@ -120,7 +120,7 @@ lxm_router.register_delivery_callback(LXMDelivery)
 local_lxmf_destination = lxm_router.register_delivery_identity(ID,display_name=namestring)
 
 # Print hash to terminal
-print(RNS.prettyhexrep(ID.hash))
+print(RNS.prettyhexrep(local_lxmf_destination.hash))
 
 
 # Main Loop Definition
